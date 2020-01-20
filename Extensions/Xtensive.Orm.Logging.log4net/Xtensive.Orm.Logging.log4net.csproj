@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Xtensive.Orm.Logging.log4net</RootNamespace>
     <AssemblyName>Xtensive.Orm.Logging.log4net</AssemblyName>
-    <PackageId>Xtensive.Orm.Logging.log4net.Core</PackageId>
+    <PackageId>Xtensive.Orm.Logging.log4net</PackageId>
     <Title>$(DoProductName) logging provider for log4net</Title>
     <AssemblyTitle>$(Title)</AssemblyTitle>
     <PackageDescription>Adds support for logging via log4net for $(DoProductName)</PackageDescription>
@@ -29,7 +29,7 @@
   </PropertyGroup>
 
   <PropertyGroup Label="Release" Condition="'$(Configuration)'=='Release'">
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
     <OutputPath>..\..\_Build\Release\lib\</OutputPath>
     <DocumentationFile>..\..\_Build\Release\lib\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>

@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Xtensive.Orm.Web</RootNamespace>
     <AssemblyName>Xtensive.Orm.Web</AssemblyName>
-    <PackageId>Xtensive.Orm.Web.Core</PackageId>
+    <PackageId>Xtensive.Orm.Web</PackageId>
     <Title>$(DoProductName) integration with ASP.NET Core</Title>
     <AssemblyTitle>$(Title)</AssemblyTitle>
     <PackageDescription>Adds integration with ASP.NET for $(DoProductName)-powered projects</PackageDescription>
@@ -29,7 +29,7 @@
   </PropertyGroup>
 
   <PropertyGroup Label="Release" Condition="'$(Configuration)'=='Release'">
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
     <OutputPath>..\..\_Build\Release\lib\</OutputPath>
     <DocumentationFile>..\..\_Build\Release\lib\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>

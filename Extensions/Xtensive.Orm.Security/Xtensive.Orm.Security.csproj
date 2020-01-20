@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Xtensive.Orm.Security</RootNamespace>
     <AssemblyName>Xtensive.Orm.Security</AssemblyName>
-    <PackageId>Xtensive.Orm.Security.Core</PackageId>
+    <PackageId>Xtensive.Orm.Security</PackageId>
     <Title>Security extension for $(DoProductName)</Title>
     <AssemblyTitle>$(Title)</AssemblyTitle>
     <PackageDescription>Adds security layer for $(DoProductName)-powered projects</PackageDescription>
@@ -29,7 +29,7 @@
   </PropertyGroup>
 
   <PropertyGroup Label="Release" Condition="'$(Configuration)'=='Release'">
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
     <OutputPath>..\..\_Build\Release\lib\</OutputPath>
     <DocumentationFile>..\..\_Build\Release\lib\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
