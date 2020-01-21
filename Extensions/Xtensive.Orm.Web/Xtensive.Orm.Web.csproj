@@ -52,8 +52,4 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\Orm\Xtensive.Orm\Xtensive.Orm.csproj" />
-  </ItemGroup>
-
 </Project>

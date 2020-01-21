@@ -1,10 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
 <Import Project="$(MSBuildThisFileDirectory)\Version.props" />
 
 <!-- Compute intermediate values. To avoid conflicts name all custom variables with Do prefix. -->
 <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>preview</LangVersion>
+    <Platforms>x64</Platforms>
+    <Platform>x64</Platform>
+    <DebugType>embedded</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+
     <DoBuildNumber>$(BUILD_NUMBER)</DoBuildNumber>
     <DoBuildNumber Condition="'$(DoBuildNumber)'==''">0</DoBuildNumber>
     <DoBuildYear>$([System.DateTime]::Today.Year)</DoBuildYear>
@@ -19,6 +27,14 @@
     <DoVersionName Condition="'$(DoVersionSuffix)'!=''">$(DoVersionName)-$(DoVersionSuffix)</DoVersionName>
     <DoPackageIcon>$(MSBuildThisFileDirectory)\do-nuget.png</DoPackageIcon>
     <DoRevFile>$(MSBuildThisFileDirectory)\_Build\rev.txt</DoRevFile>
+</PropertyGroup>
+    <Import Condition="Exists('User.Directory.Build.props')" Project="User.Directory.Build.props" />
+<PropertyGroup>
+    <ArtifactsDir Condition="'$(ArtifactsDir)'==''">$(MSBuildThisFileDirectory)artifacts/</ArtifactsDir>
+    <BaseIntermediateOutputPath Condition="'$(PathsOverriden)'==''">$([System.IO.Path]::GetFullPath('$(ArtifactsDir)obj/$(MSBuildProjectName)'))/</BaseIntermediateOutputPath>
+    <BaseOutputPath Condition="'$(PathsOverriden)'==''">$([System.IO.Path]::GetFullPath('$(ArtifactsDir)bin/$(Configuration)'))/</BaseOutputPath>
+    <BaseOutputPath Condition="'$(PathsOverriden)'=='' AND '$(IsTestProject)' == 'true'">$([System.IO.Path]::GetFullPath('$(ArtifactsDir)tests'))/</BaseOutputPath>
+    <OutputPath Condition="'$(PathsOverriden)'==''">$(BaseOutputPath)</OutputPath>
 </PropertyGroup>
 
 <!-- Populate standard properties. -->
@@ -43,5 +59,15 @@
     <None Include="$(DoPackageIcon)" Pack="true" PackagePath="." Visible="false" />
     <None Include="$(DoRevFile)" Pack="true" PackagePath="." Visible="false" Condition="Exists('$(DoRevFile)')" />
 </ItemGroup>
+
+
+<PropertyGroup>
+    <System_Configuration_ConfigurationManager_VER>4.7.0</System_Configuration_ConfigurationManager_VER>
+    <System_Reflection_Emit_VER>4.7.0</System_Reflection_Emit_VER>
+    <System_Reflection_Emit_Lightweight_VER>4.7.0</System_Reflection_Emit_Lightweight_VER>
+    <Microsoft_Data_SqlClient_VER>1.1.0</Microsoft_Data_SqlClient_VER>
+
+    <Mono_Cecil_VER>0.11.1</Mono_Cecil_VER>
+</PropertyGroup>
 
 </Project>

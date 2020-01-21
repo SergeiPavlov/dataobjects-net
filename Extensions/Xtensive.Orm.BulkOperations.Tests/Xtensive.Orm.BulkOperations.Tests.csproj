@@ -53,7 +53,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Orm\Xtensive.Orm.Tests.Framework\Xtensive.Orm.Tests.Framework.csproj" />
     <ProjectReference Include="..\TestCommon\TestCommon.csproj" />
     <ProjectReference Include="..\Xtensive.Orm.BulkOperations\Xtensive.Orm.BulkOperations.csproj" />
   </ItemGroup>

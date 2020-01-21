@@ -49,7 +49,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Orm\Xtensive.Orm.Tests.Framework\Xtensive.Orm.Tests.Framework.csproj" />
     <ProjectReference Include="..\TestCommon\TestCommon.csproj" />
     <ProjectReference Include="..\Xtensive.Orm.Reprocessing\Xtensive.Orm.Reprocessing.csproj" />
   </ItemGroup>

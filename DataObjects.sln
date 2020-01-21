@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions.Libs", "Extensions.Libs", "{C4AA9FB1-2A47-4E3A-A78C-BBE20EDCB3E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xtensive.Orm.BulkOperations", "Extensions\Xtensive.Orm.BulkOperations\Xtensive.Orm.BulkOperations.csproj", "{DC44D096-DF24-41EC-9841-07F33E0A8EA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xtensive.Orm.Localization", "Extensions\Xtensive.Orm.Localization\Xtensive.Orm.Localization.csproj", "{1E0545D6-D979-48E0-A311-064BEDCE5A62}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xtensive.Orm.Logging.log4net", "Extensions\Xtensive.Orm.Logging.log4net\Xtensive.Orm.Logging.log4net.csproj", "{BA58CD9C-139B-41AB-915D-962765DFADBA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xtensive.Orm.Logging.NLog", "Extensions\Xtensive.Orm.Logging.NLog\Xtensive.Orm.Logging.NLog.csproj", "{6E052601-9E0C-473D-A617-AD74DED24DC0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xtensive.Orm.Reprocessing", "Extensions\Xtensive.Orm.Reprocessing\Xtensive.Orm.Reprocessing.csproj", "{CE6BC11C-E785-4F10-A945-2416FD001689}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xtensive.Orm.Security", "Extensions\Xtensive.Orm.Security\Xtensive.Orm.Security.csproj", "{48827567-3991-4767-BED5-C76CAD47628E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xtensive.Orm.Tracking", "Extensions\Xtensive.Orm.Tracking\Xtensive.Orm.Tracking.csproj", "{9CB81088-CF8A-400C-B80A-2D9782ED5B10}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xtensive.Orm.Web", "Extensions\Xtensive.Orm.Web\Xtensive.Orm.Web.csproj", "{5E809296-02AA-4657-9FC1-CE0E0828B2B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weaver", "Xtensive.Orm.Weaver\Weaver.csproj", "{16DE3B5F-6DB8-4CE0-86B0-31ADA55CE189}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataObjects", "DataObjects\DataObjects.csproj", "{34F48F77-F806-49A6-B071-5EE7F31C7B59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC44D096-DF24-41EC-9841-07F33E0A8EA3}.Debug|x64.ActiveCfg = Debug|x64
+		{DC44D096-DF24-41EC-9841-07F33E0A8EA3}.Release|x64.ActiveCfg = Release|x64
+		{DC44D096-DF24-41EC-9841-07F33E0A8EA3}.Release|x64.Build.0 = Release|x64
+		{1E0545D6-D979-48E0-A311-064BEDCE5A62}.Debug|x64.ActiveCfg = Debug|x64
+		{1E0545D6-D979-48E0-A311-064BEDCE5A62}.Release|x64.ActiveCfg = Release|x64
+		{1E0545D6-D979-48E0-A311-064BEDCE5A62}.Release|x64.Build.0 = Release|x64
+		{BA58CD9C-139B-41AB-915D-962765DFADBA}.Debug|x64.ActiveCfg = Debug|x64
+		{BA58CD9C-139B-41AB-915D-962765DFADBA}.Release|x64.ActiveCfg = Release|x64
+		{BA58CD9C-139B-41AB-915D-962765DFADBA}.Release|x64.Build.0 = Release|x64
+		{6E052601-9E0C-473D-A617-AD74DED24DC0}.Debug|x64.ActiveCfg = Debug|x64
+		{6E052601-9E0C-473D-A617-AD74DED24DC0}.Release|x64.ActiveCfg = Release|x64
+		{6E052601-9E0C-473D-A617-AD74DED24DC0}.Release|x64.Build.0 = Release|x64
+		{CE6BC11C-E785-4F10-A945-2416FD001689}.Debug|x64.ActiveCfg = Debug|x64
+		{CE6BC11C-E785-4F10-A945-2416FD001689}.Release|x64.ActiveCfg = Release|x64
+		{CE6BC11C-E785-4F10-A945-2416FD001689}.Release|x64.Build.0 = Release|x64
+		{48827567-3991-4767-BED5-C76CAD47628E}.Debug|x64.ActiveCfg = Debug|x64
+		{48827567-3991-4767-BED5-C76CAD47628E}.Release|x64.ActiveCfg = Release|x64
+		{48827567-3991-4767-BED5-C76CAD47628E}.Release|x64.Build.0 = Release|x64
+		{9CB81088-CF8A-400C-B80A-2D9782ED5B10}.Debug|x64.ActiveCfg = Debug|x64
+		{9CB81088-CF8A-400C-B80A-2D9782ED5B10}.Release|x64.ActiveCfg = Release|x64
+		{9CB81088-CF8A-400C-B80A-2D9782ED5B10}.Release|x64.Build.0 = Release|x64
+		{5E809296-02AA-4657-9FC1-CE0E0828B2B5}.Debug|x64.ActiveCfg = Debug|x64
+		{5E809296-02AA-4657-9FC1-CE0E0828B2B5}.Release|x64.ActiveCfg = Release|x64
+		{5E809296-02AA-4657-9FC1-CE0E0828B2B5}.Release|x64.Build.0 = Release|x64
+		{16DE3B5F-6DB8-4CE0-86B0-31ADA55CE189}.Debug|x64.ActiveCfg = Debug|x64
+		{16DE3B5F-6DB8-4CE0-86B0-31ADA55CE189}.Release|x64.ActiveCfg = Release|x64
+		{16DE3B5F-6DB8-4CE0-86B0-31ADA55CE189}.Release|x64.Build.0 = Release|x64
+		{34F48F77-F806-49A6-B071-5EE7F31C7B59}.Debug|x64.ActiveCfg = Debug|x64
+		{34F48F77-F806-49A6-B071-5EE7F31C7B59}.Debug|x64.Build.0 = Debug|x64
+		{34F48F77-F806-49A6-B071-5EE7F31C7B59}.Release|x64.ActiveCfg = Release|x64
+		{34F48F77-F806-49A6-B071-5EE7F31C7B59}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DC44D096-DF24-41EC-9841-07F33E0A8EA3} = {C4AA9FB1-2A47-4E3A-A78C-BBE20EDCB3E1}
+		{1E0545D6-D979-48E0-A311-064BEDCE5A62} = {C4AA9FB1-2A47-4E3A-A78C-BBE20EDCB3E1}
+		{BA58CD9C-139B-41AB-915D-962765DFADBA} = {C4AA9FB1-2A47-4E3A-A78C-BBE20EDCB3E1}
+		{6E052601-9E0C-473D-A617-AD74DED24DC0} = {C4AA9FB1-2A47-4E3A-A78C-BBE20EDCB3E1}
+		{CE6BC11C-E785-4F10-A945-2416FD001689} = {C4AA9FB1-2A47-4E3A-A78C-BBE20EDCB3E1}
+		{48827567-3991-4767-BED5-C76CAD47628E} = {C4AA9FB1-2A47-4E3A-A78C-BBE20EDCB3E1}
+		{9CB81088-CF8A-400C-B80A-2D9782ED5B10} = {C4AA9FB1-2A47-4E3A-A78C-BBE20EDCB3E1}
+		{5E809296-02AA-4657-9FC1-CE0E0828B2B5} = {C4AA9FB1-2A47-4E3A-A78C-BBE20EDCB3E1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F995719A-8D35-49A3-B271-42898A587F57}
+	EndGlobalSection
+EndGlobal
