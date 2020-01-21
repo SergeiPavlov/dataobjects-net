@@ -3,6 +3,7 @@
 // For conditions of distribution and use, see license.
 
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using Xtensive.Collections;
 using Xtensive.Core;

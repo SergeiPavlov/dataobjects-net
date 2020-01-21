@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2003-2010 Xtensive LLC.
+// Copyright (C) 2003-2010 Xtensive LLC.
 // All rights reserved.
 // For conditions of distribution and use, see license.
 // Created by: Denis Krjuchkov
@@ -18,6 +18,7 @@ using Xtensive.Orm.Rse;
 using Xtensive.Reflection;
 using Xtensive.Tuples;
 using TypeInfo = Xtensive.Orm.Model.TypeInfo;
+using CollectionExtensions = Xtensive.Core.CollectionExtensions;
 
 namespace Xtensive.Orm.Linq
 {

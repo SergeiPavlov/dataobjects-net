@@ -28,6 +28,7 @@ using Xtensive.Reflection;
 using FieldInfo = System.Reflection.FieldInfo;
 using Tuple = Xtensive.Tuples.Tuple;
 using TypeInfo = Xtensive.Orm.Model.TypeInfo;
+using CollectionExtensions = Xtensive.Core.CollectionExtensions;
 
 namespace Xtensive.Orm.Linq
 {

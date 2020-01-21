@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012 Xtensive LLC.
+// Copyright (C) 2012 Xtensive LLC.
 // All rights reserved.
 // For conditions of distribution and use, see license.
 // Created by: Denis Krjuchkov
@@ -7,7 +7,7 @@
 using System;
 using System.Data;
 using System.Data.Common;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 namespace Xtensive.Sql.Drivers.SqlServer
 {

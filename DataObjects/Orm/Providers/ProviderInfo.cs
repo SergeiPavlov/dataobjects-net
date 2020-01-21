@@ -5,6 +5,7 @@
 // Created:    2009.06.01
 
 using System;
+using System.Linq;
 using Xtensive.Core;
 using Xtensive.Sql.Info;
 using System.Collections.Generic;
